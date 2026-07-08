@@ -3,6 +3,7 @@ SSTI wordlist is taken from: https://raw.githubusercontent.com/err0rr/SSTI/refs/
 
 ## Creating wordpress wordlist
 
+```
 #!/bin/bash
 > wp-plugins-top5000.txt
 for page in $(seq 1 50); do
@@ -13,3 +14,4 @@ for page in $(seq 1 50); do
 done
 EOF
 bash scrape.sh
+```
